@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  input[type=text], input[type=number] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=date] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus ,input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+table { width: 70%; }
+ table, th, td { border: solid 1px #DDD;
+            border-collapse: collapse; padding: 2px 3px; text-align: center;
+        }
+
+</style>
+
+</head>
+<body>
+<form id="booking-form" method="POST" action="/bookingportal">
+    <div >
+    <h1>Booking Portal</h1>
+    <p>Please fill in this form to find a train</p>
+
+
+    <label for="trainno"><b>Train no.</b></label><br>
+    <input type="text" placeholder="Enter Train number" name="trainno" required><br>
+
+    <label for="no-p"><b>No. of passengers</b></label><br>
+    <input type="number" placeholder="Enter no. of passengers" name="no_p" required><br>
+
+    <label for="tcoach"><b>Coach type</b></label><br>
+    <input type="text" placeholder="Enter 'AC' or 'non-AC'" name="tcoach" required><br>
+
+    <label for="traindate"><b>Date</b></label><br>
+    <input type="date" placeholder="dd-mm-yyyy" name="traindate" required><br>
+    <!--<button style="position:absolute; left:5%; width: 300px" onclick="func1()">Add passenger names</button><br>
+    <p>                            </p>
+    <input style="position:absolute; left:7%;width : 200px" type="submit" value="Find Trains" onclick="othername();" /><br>
+    <h3>-->
+    <h3>Passenger Details</h3><br>
+    <label for="ps1"><b>Member1</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps1" >
+
+    <label for="a1"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a1" >
+
+    <label for="g1"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g1" ><br>
+
+    <label for="ps2"><b>Member2</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps2" >
+
+    <label for="a2"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a2" >
+
+    <label for="g2"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g2" ><br>
+
+    <label for="ps3"><b>Member3</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps3" >
+
+    <label for="a3"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a3" >
+
+    <label for="g3"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g3" ><br>
+
+    <label for="ps4"><b>Member4</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps4" >
+
+    <label for="a4"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a4" >
+
+    <label for="g4"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g4" ><br>
+
+    <label for="ps5"><b>Member5</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps5" >
+
+    <label for="a5"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a5">
+
+    <label for="g5"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g5"><br>
+
+    <label for="ps6"><b>Member6</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Name" name="ps6">
+
+    <label for="a6"><b>Age</b></label>
+    <input style="width:25%" type="number" placeholder="Enter Age" name="a6">
+
+    <label for="g6"><b>Gender</b></label>
+    <input style="width:25%" type="text" placeholder="Enter Gender" name="g6"><br>
+
+
+<input style="position:absolute; left:5%;width : 200px" type="submit" value="get ticket" />
+<br>
+</form>
+
+</body>
+</html>

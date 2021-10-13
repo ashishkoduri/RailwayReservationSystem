@@ -1,0 +1,22 @@
+import 'package:tca_app/pages/home.dart';
+import 'package:tca_app/pages/login.dart';
+import 'package:tca_app/pages/team_members.dart';
+import 'package:tca_app/pages/events.dart';
+import 'package:tca_app/pages/donations.dart';
+import 'package:tca_app/pages/contact_us.dart';
+import 'package:tca_app/pages/signup.dart';
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MaterialApp(
+    initialRoute: '/home',
+    routes: {
+      '/': (context) => Login(),
+      '/home': (context) => Home(),
+      '/team_members': (context) => TeamMembers(),
+      '/events' : (context) => Events(),
+      '/donations' : (context) => Donations(),
+      '/contact_us' : (context) => ContactUs(),
+      '/signup': (context) => SignUp(),
+    }
+));
